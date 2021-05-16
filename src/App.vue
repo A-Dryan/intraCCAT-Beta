@@ -1,27 +1,60 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+     <div class="titulo-router">C C A T</div>
+    <router-link to="/">MOD. HOME</router-link><hr>
+    <router-link to="/about">MOD. PROYECTO</router-link><hr>
+    <router-link to="/nosotros">MOD. NOSOTROS</router-link><hr>
+    <router-link to="/miembros">MOD. MIEMBROS</router-link><hr>
+    <router-link to="/direcciongerencia">MOD. DIRECCION/GERENCIA</router-link><hr>
+    <router-link to="/proxeventos">MOD. PROX EVENTOS</router-link><hr>
   </div>
   <router-view/>
 </template>
 
 <style>
+
+hr {
+  height: 1px;
+  background-color: #e4e4e4;
+  border-top: none;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  display: flex;
+    font-family: 'Open Sans', sans-serif;
+    background: #e4e4e4;
+    height: 100vh;
 }
 
 #nav {
-  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 17%;
+  font-size: 2vh;
+  background: #fff;
 }
 
+.titulo-router{
+  display: block;
+   padding: 2vh 2vw;
+  text-align: center;
+  background: rgb(86, 160, 221);
+  color: #fff;
+}
 #nav a {
-  font-weight: bold;
-  color: #2c3e50;
+    padding: 1.5vh 2vw;
+    text-decoration: none;  
+    color: rgb(95, 95, 95);
+    outline: none;
+}
+
+#nav a:hover{
+  background: #e4e4e4;
+}
+#nav hr{
+  color: #e4e4e4;
+  margin: 0;
 }
 
 #nav a.router-link-exact-active {
